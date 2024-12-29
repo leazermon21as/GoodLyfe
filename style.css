@@ -1,0 +1,583 @@
+:root {
+    --black:#252525;
+    --gray:#424242;
+    --pink:#e43071;
+    --light-pink:#ffc1d8;
+    --green:#26d68a;
+    --light-pink:#9be8c7;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+*{
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2, h4 {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h3{
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+button:hover{
+    filter: brightness(0.8);
+}
+
+/* ------------------- HEADER ------------------- */
+
+header {
+
+}
+
+.header__block {
+    display: flex;
+    height: 101px;
+    justify-content: space-between;
+    padding-top: 30px;
+    background-color: var(--pink);
+}
+
+.header__logo {
+    font-size: 40px;
+    background: linear-gradient(to right, pink, purple); /* Градиент */
+    background-clip: text; /* Показывать фон только на тексте */
+-webkit-text-fill-color: transparent;
+margin-left: 50px;
+
+}
+
+.header__navigation {
+    padding-top:10px ;
+}
+
+.header__navigation a {
+    margin-left: 30px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.header__navigation a:hover {
+    color: #aca4a4;
+}
+
+.header__navigation a:active {
+    color: #ffffff;
+}
+
+.header__button button{
+    margin-right: 50px;
+    padding-top:10px ;
+    width: 150px;
+    height: 50px;
+    border-radius: 200px;
+    padding-bottom: 10px;
+    transition: 0.3s;
+}
+
+.header__button button:hover{
+    background-color: #ffc1d8;
+}
+
+.header__button button:active{
+    background-color: #ffffff;
+}
+
+.header__navigation ul {
+    display: flex;
+}
+
+/* ------------- MAIN ------------- */
+
+.main__block {
+    background-image: url(creation/image/Female\ working\ out.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+}
+
+.main__block {
+    
+}
+
+.main__title {
+    margin-top: 240px;
+    text-align: center;
+    
+}
+.main__text h1{
+    font-size: 70px;
+
+}
+.main__button button{
+    margin-top: 22px;
+    border-radius: 200px;
+    width: 237px;
+    height: 66px;
+    background-color: var(--pink);
+    color: white;
+}
+
+.main__button button:hover {
+    background-color: #ca1457;
+}
+
+.main__button button:active {
+    background-color: #ff005d;
+}
+
+.main__tochki {
+    margin-top: 22px;
+    font-size: 150px;
+}
+
+
+/* ---------------------- Section ---------------------- */
+
+.section__block {
+    max-width: 1250px;
+    display: flex;
+    margin-top: 100px;
+    
+    
+}
+
+@media(max-width:950px){
+    .section__block{
+        flex-wrap: wrap;
+        margin-left: -50px;
+    }
+    .image1, .image2 img{
+        width: 200px;
+        flex-wrap: wrap;
+    }
+
+    .image2 img{
+        margin-left: -30px;
+    }
+}
+
+.section__image {
+    margin-left: 141px;
+}
+
+.image2 {
+    margin-top: -140px;
+    margin-left: 200px;
+    z-index: -1;
+}
+
+.section__text {
+    padding-left: 160px;
+    margin-top: 150px;
+    
+}
+
+.section__title {
+    font-size: 40px;
+    color: var(--pink);
+    padding-bottom: 30px;
+    
+}
+
+.section__subtitle {
+    line-height: 2;
+}
+
+.section__button button{
+    width: 240px;
+    height: 68px;
+    border:2px solid #e43071;
+    border-radius: 200px;
+    background-color: #ffffff;
+    margin-top: 30px;
+}
+
+/* SEC */
+
+.sec__block {
+    background-image: url(creation/image/Woman\ doing\ situps.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    margin-top: 150px;
+}
+
+@media(max-width:1040){
+    .sec__text{
+        margin-left: 0;
+    }
+    .sec__block{
+        margin:auto;
+    }
+    .sec__button button{
+        margin-left: 0;
+    }
+}
+
+.sec__text {
+    margin-top: 230px;
+    margin-left: 295px;
+}
+
+.sec__title {
+    font-size: 60px;
+    
+
+}
+
+.sec__subtitle {
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 250px;
+}
+
+.sec__button button{
+    width: 237px;
+    height: 66px;
+    border-radius: 200px;
+    background-color: var(--pink);
+    color: white;
+    margin-top: 40px;
+    margin-left: 300px;
+}
+
+/* FOOTER */
+
+.footer__block {
+
+}
+
+.footer__section {
+
+}
+
+.block__1 {
+    display: flex;
+    
+}
+
+.block__text {
+    margin-left: 150px;
+    margin-top: 224px;
+    width: 550px;
+
+
+}
+
+.block__title {
+    font-size: 40px;
+    color: var(--pink);
+}
+
+.block__subtitle {
+
+}
+
+.block__button button{
+    border-radius: 200px;
+    width: 237px;
+    height: 63px;
+    border:2px solid #e43071;
+}
+
+.block__image {
+    margin-top: 150px;
+    margin-left: 100px;
+}
+
+.image1 {
+    z-index: -1;
+
+}
+
+.image {
+    
+    margin-top: -100px;
+    margin-left: 300px;
+}
+/* REWIEVS */
+
+.reviews {
+    margin-top: 150px;
+    
+}
+
+.reviews__text {
+    margin-left: 30px;
+}
+
+.reviews__text h1{
+font-size: 48px;
+color: var(--gray);
+}
+
+.reviews__text p{
+    font-size: 18px;
+    color:var(--gray) ;
+}
+
+.reviews__carts p {
+    line-height: 30px;
+    padding-top: 15px;
+}
+
+.reviews__carts {
+    padding-top: 30px;
+    
+    
+}
+
+.reviews__carts h1 {
+    color: var(--pink);
+    font-size: 38px;
+}
+
+.cart__1 {
+    width: 350px;
+    height: 445px;
+    box-shadow: 1px 4px 8px 0px #00000041;
+    padding-top: 30px;
+    padding-left: 30px;
+    margin-left: 220px;
+    margin-top: 100px;
+}
+
+
+.avatar img{
+    display: flex;
+}
+
+.cart__2 {
+    width: 449px;
+    height: 343px;
+    box-shadow: 1px 4px 8px 0px #0000002E;
+    padding-top: 30px;
+    padding-left: 30px;
+    
+}
+
+.cart__3 {
+    width: 351px;
+    height: 279px;
+    box-shadow: 1px 4px 8px 0px #0000002E;
+    padding-top: 30px;
+    padding-left: 30px;
+    margin-top: -80px;
+}
+
+.avatar__name p, h3{
+    padding-left: 75px;
+    margin-top: -20px;
+}
+
+.cart__1 .avatar  {
+    
+    padding-top: 40px;
+}
+
+.cart__2 .avatar  {
+    display: flex;
+    padding-top: 40px;
+}
+
+.cart__3 {
+    margin-top: -100px;
+}
+
+.reviews__carts {
+    display: grid;
+    grid-template-columns: 1fr; /* Один столбец по умолчанию */
+    gap: 20px; /* Расстояние между карточками */
+}
+
+.cart__size {
+    grid-column: 1 / -1; /* Первая карточка занимает всю ширину */
+}
+
+.cart__2,
+.cart__3 {
+    display: block; /* Убедимся, что карточки корректно отображаются */
+}
+
+  @media (min-width: 768px) { /* Для больших экранов */
+    .reviews__carts {
+      grid-template-columns: 1fr 1fr; /* Два столбца */
+    }
+
+    .cart__size {
+      grid-column: 1 / 2; /* Первая карточка занимает 1 столбец */
+}
+
+    .cart__2 {
+      grid-column: 2; /* Вторая карточка справа */
+    }
+
+    .cart__3 {
+      grid-column: 2; /* Третья карточка под второй */
+    }
+}
+
+/*----------- FORGET -----------*/
+
+.forget {
+    margin-top: 150px;
+    max-height: 500px;
+    background-color: var(--pink);
+    color: white;
+    flex-wrap: wrap;
+
+}
+
+.forget__block {
+    display: flex;
+}
+
+.forget__text {
+    width: 450px;
+    padding-top: 100px;
+    margin-left: 150px;
+}
+
+.forget__title {
+    margin-bottom: 20px;
+}
+
+.forget__title {
+    line-height: 2;
+}
+
+.forget__text h2{
+    font-size: 40px;
+    margin-bottom: 5px;
+    
+}
+
+
+
+.forget__navigation p {
+    color: #ffffff93;
+}
+
+.forget__navigation img{
+    margin-top: 7px;
+    border-radius: 200px;
+}
+
+.forget__image {
+    display: flex;
+    margin-left: 200px;
+}
+
+.forget__image img {
+    
+}
+
+.forget__image1  {
+    margin-top: -70px;
+}
+
+.forget__image2 {
+    margin-top: 200px;
+    margin-left: 50px;
+}
+
+.subtitle__img {
+    z-index: 1;
+    margin-top: -450px;
+    margin-left: -15px;
+}
+
+/* SOCIAL */
+
+.social {
+    height: 300px;
+    margin-top: 200px;
+    margin-left: 100px;
+}
+
+.social h1 {
+    font-size: 40px;
+    color: var(--pink);
+    text-align: center;
+    margin-left: 104px;
+}
+
+.social__img{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.social__img img {
+    padding-left: 104px;
+}
+
+/*-------------- END --------------*/
+
+.end {
+    background-color: #0B0D17;
+    color: white;
+    padding-top: 50px;
+    height: 100%;
+}
+.end * {
+    line-height: 1.5;
+    margin-top: 9px;
+}
+
+.end__title {
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.end__title-text {
+    width: 255px;
+}
+
+.end__title-text h1 {
+    font-size: 24px;
+}
+.end__title-text h1 a{
+    color: var(--pink);
+    font-size: 25px;
+}
+
+.end__title-social ul{
+    flex-wrap: wrap;
+}
+
+.end__subtitle {
+    display: flex;
+}
+
+.end__navigation {
+    flex-wrap: wrap;
+    margin-left: 200px;
+}
+
+.navigation__2 {
+    margin-left: 400px;
+}
+
+.end__call {
+    margin-left: 200px;
+}
+
+
+
